@@ -5,6 +5,7 @@
     Version         : 1.0
     
 * ================================================================= */
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -19,7 +20,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -28,6 +28,32 @@ function showSlides(n) {
     
   slides[slideIndex-1].style.display = "block";
 }
+
+
+var slideIndexx = 1;
+showSlides2(slideIndexx);
+
+function plusSlides2(n) {
+  showSlides2(slideIndexx += n);
+}
+
+function currentSlide(n) {
+  showSlides2(slideIndexx = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  if (n > slides.length) {slideIndexx = 1}
+    if (n < 1) {slideIndexx = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    
+  slides[slideIndexx-1].style.display = "block";
+}
+
+
 (function($) {
     "use strict";
 
