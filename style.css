@@ -130,12 +130,15 @@ iframe {
   border: none;
 }
 
-p {
-  color: #666666;
-  line-height: 26px;
-  margin: 0 0 15px;
-  text-transform: none;
-  font-weight: 400;
+
+  p {
+    color: #666666;
+    line-height: 30px;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
+    word-spacing: 2px;
 }
 
 hr {
@@ -2888,14 +2891,71 @@ body,
 /* ============================================================== 
      # Testimonials
 =================================================================== */
-.testimonials-area .intro h2 {
-  font-weight: 600;
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
 }
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.mySlides h2{
+  color: #b32919;
+}
+
+/* Add a background color to the active dot/circle */
+
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+
 
 .testimonials-area .intro a {
   margin-top: 5px;
 }
-
+.testimonials-area .intro span{
+  color: #b32919;
+  font-weight: bold;
+}
 .testimonial-items {
   padding-left: 30px;
   position: relative;
@@ -2914,11 +2974,11 @@ body,
 
 .testimonials-area .carousel-indicators {
   bottom: 0;
-  left: 0;
-  margin-left: -10px;
+  right: 0;
+  margin-right: -10px;
   margin-top: 30px;
   position: relative;
-  text-align: left;
+  text-align: right;
   width: 100%;
 }
 
@@ -2928,7 +2988,7 @@ body,
   -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
-  height: 60px;
+  height: 45px;
   margin: 0 5px;
   opacity: 0.4;
   overflow: hidden;
@@ -2943,7 +3003,7 @@ body,
   -ms-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   vertical-align: middle;
-  width: 60px;
+  width: 45px;
 }
 
 .testimonials-area .carousel-indicators li img {
@@ -2969,8 +3029,9 @@ body,
 }
 
 .testimonials-area .carousel-inner .item h4 {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 5px;
+  color: #b32919;
   margin-top: 20px;
   text-transform: uppercase;
 }
@@ -2984,21 +3045,7 @@ body,
   z-index: 1;
 }
 
-.testimonials-area .carousel-inner .item p::before {
-  content: ",,";
-  font-family: "Cairo";
-  font-size: 100px;
-  left: 3px;
-  letter-spacing: -8px;
-  opacity: 0.1;
-  position: absolute;
-  top: 40px;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
+
 
 /* ============================================================== 
      # Portfolio
