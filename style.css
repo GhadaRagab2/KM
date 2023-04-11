@@ -84,6 +84,10 @@ body,
     #imPageExtContainer {
         background-image: unset;
     }
+    footer .img {
+        width: 70%;
+        margin: auto;
+    }
     footer {
         text-align: center;
     }
