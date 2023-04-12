@@ -1530,7 +1530,7 @@ body,
 
 .about-area {
     border-top: 1px dashed #e7e7e7;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-top: 50px;
 }
 
