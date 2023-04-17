@@ -91,6 +91,14 @@ body,
     footer {
         text-align: center;
     }
+    .d-flex {
+        justify-content: center;
+    }
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
 }
 
 h1,
@@ -118,10 +126,11 @@ h4 {
     margin-bottom: 15px;
 }
 
-h5,
+
+/* h5,
 h5 {
     margin-bottom: 10px;
-}
+} */
 
 img {
     border: none;
@@ -2924,6 +2933,31 @@ body,
 .mySlides2 {
     display: none;
     padding: 50px;
+}
+
+.s-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-row div {
+    width: 45%;
+}
+
+.s-row p {
+    padding-top: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    .s-row {
+        display: block;
+    }
+    .s-row div {
+        width: 100%;
+    }
+    .s-row p {
+        padding-top: 0;
+    }
 }
 
 
