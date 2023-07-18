@@ -370,33 +370,64 @@
         <!-- End Footer Bottom -->
     </footer>
     <!----------------------whatsapp icon--------------------------------->
+    <a href="#" class="float-works" target="_blank">
+        <img src="./assets/img/prev-works.png" style="width: 100%;"></a>
     <a href="https://wa.me/966578499020" class="float" target="_blank">
-        <img src="./assets/img/whatsapp.png" style="width: 100%;"></a>
+        <img src="./assets/img/whats.png" style="width: 100%;"></a>
+    <a href="https://www.snapchat.com/add/ilkhaledah69?share_id=Y3TvxtIuS9OoqpTF85wgxA&locale=ar_SA@calendar=gregorian&sid=a393ce7bf89146a6aea68d2c7362f75e" class="float-insta" target="_blank">
+        <img src="./assets/img/snap.png" style="width: 100%;"></a>
+    <a href="https://instagram.com/kms20302?igshid=MmIzYWVlNDQ5Yg==" class="float-snap" target="_blank">
+        <img src="./assets/img/insta.png" style="width: 100%;"></a>
     <style>
-        /**********************************whatsapp icon******************************/
+        /********************************** whatsapp icon******************************/
         
-        .float {
+        .float,
+        .float-insta,
+        .float-snap,
+        .float-works {
             position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 35px;
+            width: 45px;
+            height: 45px;
             left: 13px;
-            /* background-color:#25d366; */
             color: #FFF;
             border-radius: 50px;
             text-align: center;
-            font-size: 30px;
             box-shadow: 2px 2px 3px #999;
             z-index: 100;
+        }
+        
+        .float-works {
+            width: 60px;
+            height: 60px;
+            right: 13px;
+            left: unset;
+        }
+        
+        .float,
+        .float-works {
+            bottom: 30px;
+        }
+        
+        .float-insta {
+            bottom: 85px;
+        }
+        
+        .float-snap {
+            bottom: 150px;
         }
         /* ================= responsive ============ */
         
         @media screen and (max-width: 768px) {
-            .float {
-                left: 7px;
+            .float,
+            .float-insta,
+            .float-snap {
+                left: 5px;
             }
         }
     </style>
+
+
+    </div>
     <!------------------------------------end whatsapp icon-->
     <!-- End Footer -->
 
